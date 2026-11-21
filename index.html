@@ -30,88 +30,88 @@
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
 
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="identity" href="#top" aria-label="TarKek, на главную">
-        <span>TarKek</span>
+  <div class="layout">
+    <aside class="profile" id="top" aria-label="Профиль">
+      <a class="avatar-link" href="#top" aria-label="TarKek, на главную">
+        <img src="assets/avatar.png" alt="" width="88" height="88">
       </a>
-      <nav class="site-nav" aria-label="Основная навигация">
+      <h1 class="profile-name">TarKek</h1>
+      <p class="profile-role">Rust, Python, Assembly</p>
+      <p class="profile-bio">Делаю инструменты для обхода цензуры, локального ИИ и маленьких операционных систем.</p>
+
+      <nav class="profile-nav" aria-label="Основная навигация">
         <a href="#projects">Проекты</a>
-        <a href="#about">Обо мне</a>
+        <a href="#about">Подход</a>
         <a href="#contact">Связаться</a>
         <a href="https://github.com/TarKek" target="_blank" rel="noopener">GitHub</a>
       </nav>
-    </div>
-  </header>
 
-  <main class="wrap" id="main">
-    <section class="intro" id="top" aria-labelledby="intro-title">
-      <div class="intro-head">
-        <img src="assets/avatar.png" alt="" width="72" height="72">
-        <div>
-          <h1 id="intro-title">TarKek</h1>
-          <p class="intro-meta">Rust, Python, Assembly</p>
-        </div>
-      </div>
-      <p class="lead">Делаю инструменты для обхода цензуры, локального ИИ и маленьких операционных систем.</p>
-      <p>Мне интересно, как всё работает на низком уровне: сетевые протоколы, локальные модели, загрузка ОС. Поэтому проекты обычно небольшие и решают одну задачу.</p>
-    </section>
+      <p class="profile-note">Без трекеров и аналитики.</p>
+    </aside>
 
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">Проекты</h2>
-      <p class="section-note">Четыре репозитория, которые лучше всего описывают, чем я занимаюсь.</p>
+    <main class="content" id="main">
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Проекты</h2>
+        <p class="section-intro">Четыре репозитория, которые лучше всего описывают, чем я занимаюсь.</p>
 
-      <ul class="project-list">
-        <li>
-          <div class="project-head">
-            <h3><a href="https://github.com/TarKek/obhod" target="_blank" rel="noopener">obhod</a></h3>
-            <span class="project-lang">Rust</span>
-          </div>
-          <p>Портативный инструмент для обхода цензуры на Windows.</p>
-        </li>
-        <li>
-          <div class="project-head">
-            <h3><a href="https://github.com/TarKek/matrixcode" target="_blank" rel="noopener">matrixcode</a></h3>
-            <span class="project-lang">Python</span>
-          </div>
-          <p>Локальный harness для llama-server: превращает модель в ассистента для кода и учёбы без облака.</p>
-        </li>
-        <li>
-          <div class="project-head">
-            <h3><a href="https://github.com/TarKek/xeno" target="_blank" rel="noopener">xeno</a></h3>
-            <span class="project-lang">Assembly</span>
-          </div>
-          <p>Крошечная операционная система на fasm.</p>
-        </li>
-        <li>
-          <div class="project-head">
-            <h3><a href="https://github.com/TarKek/vdvoem" target="_blank" rel="noopener">vdvoem</a></h3>
-            <span class="project-lang">Python</span>
-          </div>
-          <p>Приложение для пар: календарь, желания, подарки и модули.</p>
-        </li>
-      </ul>
-    </section>
+        <ul class="project-list">
+          <li>
+            <a class="project" href="https://github.com/TarKek/obhod" target="_blank" rel="noopener">
+              <div class="project-head">
+                <h3 class="project-name">obhod</h3>
+                <span class="project-lang">Rust</span>
+              </div>
+              <p class="project-desc">Портативный инструмент для обхода цензуры на Windows.</p>
+            </a>
+          </li>
+          <li>
+            <a class="project" href="https://github.com/TarKek/matrixcode" target="_blank" rel="noopener">
+              <div class="project-head">
+                <h3 class="project-name">matrixcode</h3>
+                <span class="project-lang">Python</span>
+              </div>
+              <p class="project-desc">Локальный harness для llama-server: превращает модель в ассистента для кода и учёбы без облака.</p>
+            </a>
+          </li>
+          <li>
+            <a class="project" href="https://github.com/TarKek/xeno" target="_blank" rel="noopener">
+              <div class="project-head">
+                <h3 class="project-name">xeno</h3>
+                <span class="project-lang">Assembly</span>
+              </div>
+              <p class="project-desc">Крошечная операционная система на fasm.</p>
+            </a>
+          </li>
+          <li>
+            <a class="project" href="https://github.com/TarKek/vdvoem" target="_blank" rel="noopener">
+              <div class="project-head">
+                <h3 class="project-name">vdvoem</h3>
+                <span class="project-lang">Python</span>
+              </div>
+              <p class="project-desc">Приложение для пар: календарь, желания, подарки и модули.</p>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="section" id="about" aria-labelledby="about-title">
-      <h2 id="about-title">Обо мне</h2>
-      <p>Пишу в основном на Rust, Python и Assembly. Люблю маленькие инструменты, понятный код и софт без лишней магии.</p>
-      <p>Этот сайт — статическая страница на GitHub Pages. Без трекеров, аналитики и Cookie.</p>
-    </section>
+      <section class="section" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">Подход</h2>
+        <p class="about-lead">Люблю маленькие инструменты, понятный код и софт без лишней магии.</p>
+        <p>Мне интересно, как всё работает на низком уровне: сетевые протоколы, локальные модели, загрузка ОС. Поэтому проекты обычно решают одну задачу и не тянут за собой лишнего.</p>
+      </section>
 
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Связаться</h2>
-      <p>Лучший способ — GitHub: issues, pull requests и обсуждения в репозиториях. Открыт к вопросам о низком уровне, локальном ИИ и обходе блокировок.</p>
-      <p><a href="https://github.com/TarKek" target="_blank" rel="noopener">github.com/TarKek</a></p>
-    </section>
-  </main>
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Связаться</h2>
+        <p>Лучший способ поговорить: GitHub. Issues, pull requests и обсуждения в репозиториях.</p>
+        <p>Открыт к вопросам о низком уровне, локальном ИИ и обходе блокировок.</p>
+        <a class="contact-link" href="https://github.com/TarKek" target="_blank" rel="noopener">github.com/TarKek</a>
+      </section>
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <span>TarKek, 2026</span>
-      <span>Без трекеров и аналитики.</span>
-      <a href="https://github.com/TarKek/TarKek.github.io" target="_blank" rel="noopener">Исходники</a>
-    </div>
-  </footer>
+      <footer class="content-footer">
+        <span>TarKek, 2026</span>
+        <a href="https://github.com/TarKek/TarKek.github.io" target="_blank" rel="noopener">Исходники</a>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
